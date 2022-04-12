@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>434</width>
-    <height>753</height>
+    <height>903</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -35,7 +35,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Browse</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -94,7 +94,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Browse</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -151,7 +151,7 @@
        <x>10</x>
        <y>20</y>
        <width>181</width>
-       <height>241</height>
+       <height>231</height>
       </rect>
      </property>
     </widget>
@@ -162,7 +162,7 @@
       <x>10</x>
       <y>460</y>
       <width>411</width>
-      <height>151</height>
+      <height>171</height>
      </rect>
     </property>
     <property name="title">
@@ -181,14 +181,14 @@
     <widget class="QPushButton" name="pushButton_4">
      <property name="geometry">
       <rect>
-       <x>150</x>
+       <x>10</x>
        <y>110</y>
        <width>81</width>
-       <height>31</height>
+       <height>51</height>
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>Train</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_7">
@@ -214,7 +214,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>Browse</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_3">
@@ -251,6 +251,52 @@
      </property>
      <property name="text">
       <string>100</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_6">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>140</y>
+       <width>221</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_5">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>110</y>
+       <width>221</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>110</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Train Accuracy</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>140</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Test Accuracy</string>
      </property>
     </widget>
    </widget>
@@ -345,59 +391,38 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>620</y>
+      <y>630</y>
       <width>411</width>
-      <height>91</height>
+      <height>221</height>
      </rect>
     </property>
     <property name="title">
      <string>Result</string>
     </property>
-    <widget class="QLineEdit" name="lineEdit_5">
+    <widget class="QTableWidget" name="tableWidget">
      <property name="geometry">
       <rect>
-       <x>120</x>
-       <y>20</y>
-       <width>231</width>
-       <height>20</height>
+       <x>20</x>
+       <y>30</y>
+       <width>381</width>
+       <height>181</height>
       </rect>
      </property>
-    </widget>
-    <widget class="QLabel" name="label_9">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>20</y>
-       <width>81</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Train Accuracy</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_6">
-     <property name="geometry">
-      <rect>
-       <x>120</x>
-       <y>50</y>
-       <width>231</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_10">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>50</y>
-       <width>81</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Test Accuracy</string>
-     </property>
+     <column>
+      <property name="text">
+       <string>index</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>label</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>predict</string>
+      </property>
+     </column>
     </widget>
    </widget>
   </widget>
